@@ -43,8 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\QuestionData.cs" />
-    <Compile Include="Models\Answer.cs" />
-    <Compile Include="Models\Question.cs" />
+    <Compile Include="Models\IQuestion.cs" />
     <Compile Include="Models\SingleChoiceQuestion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

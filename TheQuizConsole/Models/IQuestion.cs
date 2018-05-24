@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace TheQuizConsole.Models
 {
-    interface IQuestion
+    public interface IQuestion
     {
         int Id { get; set; }
         string Description { get; set; }
-        Answer Answer { get; set; }
+        string[] Answer { get; set; }
     }
 }

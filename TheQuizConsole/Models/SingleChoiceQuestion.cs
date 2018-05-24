@@ -10,6 +10,6 @@ namespace TheQuizConsole.Models
     {
         public int Id { get; set; }
         public string Description { get; set; }
-        public Answer Answer { get; set; }
+        public string[] Answer { get; set; }
     }
 }

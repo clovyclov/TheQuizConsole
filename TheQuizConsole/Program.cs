@@ -3,34 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TheQuizConsole.Data;
 using TheQuizConsole.Models;
 
 namespace TheQuizConsole
 {
     class Program
     {
-        
         static void Main(string[] args)
         {
-            SingleChoiceQuestion question = new SingleChoiceQuestion()
-            {
-                Id = 1,
-                Description = "How much is 2 + 2?",
-                Answer = new Answer("4")
-            };
+            var initQuestions = new QuestionData();
+            var questions = initQuestions.Questions;
 
-            Console.WriteLine(question.Description);
-            var userAnswer = Console.ReadLine();
-            if (userAnswer == question.Answer.AnswerText)
+            foreach(var question in questions)
             {
-                Console.WriteLine("Awesome job!");
-            }
-            else
-            {
-                Console.WriteLine("Sorry, wrong answer");
+                Console.WriteLine(question.Description);
             }
             Console.ReadLine();
-
         }
     }
 }
